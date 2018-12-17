@@ -1,6 +1,6 @@
 ---
 title: Centering things vertically, and horizontally
-date: '2018-12-16'
+date: '2018-12-17'
 published: false
 ---
 
@@ -69,6 +69,17 @@ Have a more complex thing to center? Like a card with a blog title, and image?
   </div>
 </div>
 
+```
+
+Or how about an image carousel:
+
+```html
+<div class="container">
+  <button>Prev</button>
+  <img src="someimg.com/img" />
+  <button>Next</button>
+</div>
+  
 ```
 
 This may look complex, but if you continue reading I promise that you'll feel
