@@ -31,6 +31,12 @@ const NextPrevPostUL = styled.ul`
   padding: 0;
 `
 
+const Title = styled.h1`
+  @media (max-width: 700px) {
+    ${scale(0.5)};
+  }
+`
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -40,7 +46,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
+        <Title>{post.frontmatter.title}</Title>
         <PostDetailsContainer>
           <PostDetail>{post.frontmatter.date}</PostDetail>
           <PostDetail>{post.timeToRead} min read</PostDetail>
