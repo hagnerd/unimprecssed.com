@@ -7,6 +7,23 @@ const H1 = styled.h1`
   ${scale(1.5)};
   margin-bottom: ${rhythm(1.5)};
   margin-top: 0;
+  @media (max-width: 700px) {
+    ${scale(0.75)};
+  }
+`
+
+const H3 = styled.h3`
+  font-family: Montserrat, sans-serif;
+  margin-top: 0;
+  margin-bottom: ${rhythm(-1)};
+`
+
+const Hl = styled.span`
+  color: #5b9663;
+`
+
+const Flex = styled.div`
+  display: flex;
 `
 
 function AnimatedText({ text }) {
@@ -39,25 +56,19 @@ function AnimatedText({ text }) {
 
 function AnimatedTitle() {
   return (
-    <div style={{ display: 'flex' }}>
+    <Flex>
       <H1>Unimpre</H1>
       <AnimatedText text={['c', 's', 's']} />
       <H1>ed</H1>
-    </div>
+    </Flex>
   )
 }
 
 function SimpleTitle() {
   return (
-    <h3
-      style={{
-        fontFamily: 'Montserrat, sans-serif',
-        marginTop: 0,
-        marginBottom: rhythm(-1),
-      }}
-    >
-      Unimpre<span style={{ color: '#5b9663' }}>css</span>ed
-    </h3>
+    <H3>
+      Unimpre<Hl>css</Hl>ed
+    </H3>
   )
 }
 
