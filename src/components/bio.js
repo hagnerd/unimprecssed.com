@@ -29,9 +29,9 @@ function Bio() {
             />
             <p>
               Written by <strong>{author}</strong> an aspiring developer living
-              in Minneapolis, MN.{' '}
+              in Minneapolis, MN. You should follow him on Twitter{' '}
               <a rel="me" href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                https://twitter.com/mattinthecouch 
               </a>
             </p>
           </div>
