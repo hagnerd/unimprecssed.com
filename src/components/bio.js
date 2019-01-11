@@ -30,7 +30,7 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> an aspiring developer living
               in Minneapolis, MN.{' '}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a rel="me" href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
               </a>
             </p>
